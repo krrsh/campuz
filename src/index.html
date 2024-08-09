@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.jpg" />
+    <title>Capmuz</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="bg-slate-500 h-32 flex justify-between items-center">
+        <h1 class="pl-2 hover:cursor-pointer text-5xl font-kanit"><a href="">Campuz</a></h1>
+        <ul class="md:flex sm:gap-6 hidden">
+            <li class="hover:text-slate-300 homeLnk"><a href="">Home</a></li>
+            <li class="hover:text-slate-300 commLnk">Communtiy</li>
+            <li class="hover:text-slate-300 storiesLnk">Stories</li>
+            <li class="hover:text-slate-300 coursesLnk">Courses</li>
+            <li class="hover:text-slate-300 footerLnk">About</li>
+        </ul>
+        <ul class="flex gap-4" >
+            <button class=" hover:shadow-gray-950 transition transform hover:scale-110 hover:bg-lime-700 font-ubuntu text-white bg-slate-700 rounded-md py-1 px-4 mr-0 md:mr-5">Sign Up</button>
+            <svg  id="bar" onclick="clickBar()" class=" md:hidden m-2 menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg>
+        </ul>
+    </nav>
+
+        <!-- mobile nav bar -->
+        <nav class="MenuBar hidden">
+            <ul class="h-60 justify-around flex flex-col md:hidden items-end pr-5 bg-slate-400">
+                <li class="hover:text-slate-300 w-full text-right homeLnk"><a href="">Home</a></li>
+                <li class="hover:text-slate-300 w-full text-right commLnkM">Communtiy</li>
+                <li class="hover:text-slate-300 w-full text-right storiesLnkM">Stories</li>
+                <li class="hover:text-slate-300 w-full text-right coursesLnkM">Courses</li>
+                <li class="hover:text-slate-300 w-full text-right footerLnkM">About</li>
+            </ul>
+         </nav>
+
+    <!-- Hero section -->
+    <section class="bg-slate-300 md:flex lg:justify-between">
+        <div class="md:w-1/2">
+            <h1 class="md:text-3xl md:pl-5 pt-10 text-xl font-bebas lg:pl-20 pl-10">Unite<br> Share <br> Learn <br> Grow <br> <span class="font-bold text-4xl">Together</span></h1>
+            <p class=" w-full leading-10 md:items-center md:text-md text-lg p-5 lg:mt-20 lg:text-center text-left font-ubuntu" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque soluta perferendis molestiae minima impedit cum maiores dolor quae, rerum libero. Adipisci quod suscipit quos ipsam aspernatur omnis expedita natus et reprehenderit. Et corrupti, debitis quidem quia vitae eius laborum.</p>
+        </div>
+        <div>
+            <img class=" sm:mx-auto"  src="https://picsum.photos/640" alt="">
+        </div>
+    </section>
+
+    <!-- Courses -->
+     <section class="bg-slate-100 coursesSec">
+        <h1 class="font-bebas text-4xl mt-5">COURSES for you</h1>
+        <div class="flex flex-col justify-evenly items-center lg:flex lg:flex-row">
+            <div class="flex flex-col gap-2  transition transform hover:scale-110 hover:shadow-2xl hover:cursor-pointer text-center items-center lg:w-1/4 bg-neutral-300 p-5 m-5 rounded-xl">
+                <h1 class="font-kanit text-2xl">MERN Stack</h1>
+                <p class="my-5 font-ubuntu">Lorem iping educimus ab voluptas. Amet inventore et quas nesciunt labore ut! Explicabo voluptatum deserunt iure quam animi, quidem aperiam repudiandae!</p>
+                <img class="w-[200px] h-[200px]" src="./assets/mern.png" alt="image">
+                <p class=" font-medium bg-slate-500 px-3 py-1 text-white rounded-md">$299</p>
+                <button class="bg-slate-600 transition transform hover:scale-110 w-fit rounded-lg px-3 py-2 text-white  hover:bg-slate-700">Get now</button>
+            </div>
+            <div class="  flex flex-col justify-between  transition transform hover:scale-110 hover:shadow-2xl hover:cursor-pointer text-center items-center lg:w-1/4 bg-neutral-300 p-5 m-5 rounded-xl">
+                <h1 class="font-kanit text-2xl">Python</h1>
+                <p class="my-5 font-ubuntu">Lorem iping educimus ab voluptas. Amet inventore et quas nesciunt labore ut! Explicabo voluptatum deserunt iure quam animi, quidem aperiam repudiandae!</p>
+                <img src="./assets/python.jpg" alt="">
+                <p class=" font-medium my-5 bg-slate-500 px-3 py-1 text-white rounded-md">$99</p>
+                <button class="bg-slate-600 transition transform hover:scale-110  rounded-lg px-3 py-2 text-white  hover:bg-slate-700">Get now</button>
+            </div>
+            <div class=" flex flex-col justify-between   transition transform hover:scale-110 hover:shadow-2xl hover:cursor-pointer text-center items-center lg:w-1/4 bg-neutral-300 p-5 m-5 rounded-xl">
+                <h1 class="font-kanit text-2xl">React JS</h1>
+                <p class="my-5 font-ubuntu">Lorem iping educimus ab voluptas. Amet inventore et quas nesciunt labore ut! Explicabo voluptatum deserunt iure quam animi, quidem aperiam repudiandae!</p>
+                <img src="./assets/react.png" alt="">
+                <p class=" font-medium my-5 bg-slate-500 px-3 py-1 text-white rounded-md">$199</p>
+                <button class="bg-slate-600 transition transform hover:scale-110  rounded-lg px-3 py-2 text-white  hover:bg-slate-700">Get now</button>
+            </div>
+            <div class=" flex flex-col justify-between   transition transform hover:scale-110 hover:shadow-2xl hover:cursor-pointer text-center items-center lg:w-1/4 bg-neutral-300 p-5 m-5 rounded-xl">
+                <h1 class="font-kanit text-2xl">MERN Stack</h1>
+                <p class="my-5 font-ubuntu">Lorem iping educimus ab voluptas. Amet inventore et quas nesciunt labore ut! Explicabo voluptatum deserunt iure quam animi, quidem aperiam repudiandae!</p>
+                <img src="./assets/java.png" alt="">
+                <p class=" font-medium my-5 bg-slate-500 px-3 py-1 text-white rounded-md">$299</p>
+                <button class="bg-slate-600 transition transform hover:scale-110  rounded-lg px-3 py-2 text-white  hover:bg-slate-700">Get now</button>
+            </div>
+        </div>
+     </section>
+
+     <!-- stories -->
+     <h1 class="font-bebas text-4xl mt-5 storiesSec">Success Stories</h1>
+     <section class="bg-neutral-300 pb-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+         <div class="bg-slate-400 flex flex-col items-center m-5  text-center rounded-xl hover:shadow-2xl mt-20">
+            <img class="w-56 h-56 pt-2 " src="./assets/leo.png" alt="">
+            <p class="bg-slate-500 text-sm p-3 w-full h-full  rounded-b-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nam? ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nam?</p>
+        </div>
+        <div class="bg-slate-400 flex flex-col items-center m-5  text-center rounded-xl hover:shadow-2xl mt-20">
+            <img class="w-56 h-56 pt-2 " src="./assets/batman.png" alt="">
+            <p class="bg-slate-500 text-sm p-3 w-full h-full  rounded-b-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nam? ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nam?</p>
+        </div>
+        <div class="bg-slate-400 flex flex-col items-center m-5  text-center rounded-xl hover:shadow-2xl mt-20">
+            <img class="w-56 h-56 pt-2 " src="./assets/pitt.png" alt="">
+            <p class="bg-slate-500 text-sm p-3 w-full h-full  rounded-b-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nam? ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, nam?</p>
+        </div>
+      </section>
+
+      <!-- Community -->
+       <section class="bg-neutral-50 mt-10 p-10 sm:flex commSec">
+        <div class="sm:order-2 sm:mt-16 lg:ml-36 ">
+            <div class="text-4xl font-bebas mb-5 text-center">Learn Together by Sharing your Knowledge with People Globally</div>
+            <button class="hidden sm:flex bg-slate-500 hover:bg-slate-700 text-white rounded-xl  px-4 py-2  mx-auto justify-center">Go to Community page ></button>
+        </div>
+        <img class="sm:w-96 sm:order-1" src="./assets/sharing.jpg" alt="">
+        <button class="sm:hidden bg-slate-500 hover:bg-slate-700 text-white rounded-xl mb-10 px-10 py-5 w-4/5 ml-14">Go to Community page ></button>
+       </section>
+
+       <!-- Footer -->
+        <section class="h-60 grid grid-cols-2 footerSec">
+            <div class=" p-4 grid grid-rows-1 bg-slate-300 font-semibold">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam repudiandae reprehenderit deleniti dolorem odit eos, quidem cupiditate dicta suscipit quae molestiae magni? Officiis soluta labore illum sint accusantium. Ipsam, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam accusamus deleniti hic, vitae saepe, dolor tenetur, reiciendis explicabo ad autem cumque delectus impedit. Fugiat cum rem saepe vel labore.</p>
+            </div>
+            <div class="grid grid-rows-2">
+                <div class=" bg-neutral-300 p-2"><a class="hover:scale-110 hover:cursor-pointer hover:font-bold font-semibold">@2024 Campuz.com</a></div>
+                <div class="flex bg-slate-200 gap-2 p-2">
+                    <svg class="size-7 hover:cursor-pointer hover:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#0F0F0F"/>
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#0F0F0F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#0F0F0F"/>
+                    </svg>    
+                    <svg class="size-7 hover:cursor-pointer hover:scale-110" fill="#000000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" 
+                        viewBox="0 0 31.812 26">
+                        <path d="M20.877,2.000 C22.519,2.000 24.382,2.652 25.426,3.738 C26.724,3.486 27.949,3.025 29.050,2.386 C28.625,3.687 27.718,4.779 26.540,5.469 C27.693,5.332 28.797,5.035 29.820,4.590 C29.054,5.707 28.087,6.690 26.971,7.477 C26.981,7.715 26.987,7.955 26.987,8.195 C26.987,15.562 21.445,24.000 10.939,24.000 C7.715,24.000 4.507,23.133 1.982,21.551 C2.428,21.605 2.883,21.631 3.343,21.631 C6.019,21.631 8.482,20.740 10.439,19.242 C7.937,19.199 5.827,17.586 5.103,15.373 C5.450,15.437 5.810,15.473 6.178,15.473 C6.696,15.473 7.203,15.406 7.681,15.277 C5.068,14.768 3.100,12.514 3.100,9.813 C3.100,9.787 3.100,9.764 3.100,9.740 C3.871,10.158 4.750,10.410 5.687,10.440 C4.154,9.437 3.147,7.734 3.147,5.799 C3.147,4.777 3.428,3.818 3.919,2.998 C6.735,6.367 10.945,8.588 15.693,8.822 C15.594,8.414 15.543,7.984 15.543,7.553 C15.543,4.473 17.721,2.000 20.877,2.000 M29.820,4.590 L29.825,4.590 M20.877,-0.000 C17.033,-0.000 14.060,2.753 13.614,6.552 C10.425,5.905 7.524,4.204 5.440,1.711 C5.061,1.257 4.503,0.998 3.919,0.998 C3.867,0.998 3.815,1.000 3.763,1.004 C3.123,1.055 2.547,1.413 2.216,1.966 C1.525,3.122 1.159,4.447 1.159,5.799 C1.159,6.700 1.321,7.579 1.625,8.400 C1.300,8.762 1.113,9.238 1.113,9.740 L1.113,9.813 C1.113,11.772 1.882,13.589 3.160,14.952 C3.087,15.294 3.103,15.655 3.215,15.998 C3.657,17.348 4.459,18.510 5.499,19.396 C4.800,19.552 4.079,19.631 3.343,19.631 C2.954,19.631 2.577,19.609 2.222,19.565 C2.141,19.556 2.061,19.551 1.981,19.551 C1.148,19.551 0.391,20.078 0.108,20.886 C-0.202,21.770 0.140,22.753 0.932,23.249 C3.764,25.023 7.318,26.000 10.939,26.000 C17.778,26.000 22.025,22.843 24.383,20.195 C27.243,16.984 28.907,12.718 28.972,8.455 C29.899,7.682 30.717,6.790 31.410,5.792 C31.661,5.458 31.810,5.041 31.810,4.590 C31.810,3.909 31.473,3.308 30.958,2.946 C31.181,2.176 30.925,1.342 30.303,0.833 C29.940,0.537 29.496,0.386 29.049,0.386 C28.708,0.386 28.365,0.474 28.056,0.654 C27.391,1.040 26.680,1.344 25.931,1.562 C24.555,0.592 22.688,-0.000 20.877,-0.000 L20.877,-0.000 Z"/>
+                    </svg>   
+                    <svg class="size-7 hover:cursor-pointer hover:scale-110" fill="#000000" viewBox="0 -4 32 32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                        <path d="M30.722,20.579 C30.137,21.894 28.628,23.085 27.211,23.348 C27.066,23.375 23.603,24.000 16.010,24.000 L15.990,24.000 C8.398,24.000 4.932,23.375 4.788,23.349 C3.371,23.085 1.861,21.894 1.275,20.578 C1.223,20.461 0.001,17.647 0.001,12.000 C0.001,6.353 1.223,3.538 1.275,3.421 C1.861,2.105 3.371,0.915 4.788,0.652 C4.932,0.625 8.398,-0.000 15.990,-0.000 C23.603,-0.000 27.066,0.625 27.210,0.651 C28.628,0.915 30.137,2.105 30.723,3.420 C30.775,3.538 32.000,6.353 32.000,12.000 C32.000,17.647 30.775,20.461 30.722,20.579 ZM28.893,4.230 C28.581,3.529 27.603,2.759 26.845,2.618 C26.813,2.612 23.386,2.000 16.010,2.000 C8.615,2.000 5.185,2.612 5.152,2.618 C4.394,2.759 3.417,3.529 3.104,4.234 C3.094,4.255 2.002,6.829 2.002,12.000 C2.002,17.170 3.094,19.744 3.106,19.770 C3.417,20.471 4.394,21.241 5.153,21.382 C5.185,21.388 8.615,22.000 15.990,22.000 L16.010,22.000 C23.386,22.000 26.813,21.388 26.846,21.382 C27.604,21.241 28.581,20.471 28.894,19.766 C28.904,19.744 29.998,17.170 29.998,12.000 C29.998,6.830 28.904,4.255 28.893,4.230 ZM13.541,17.846 C13.379,17.949 13.193,18.000 13.008,18.000 C12.842,18.000 12.676,17.959 12.525,17.875 C12.206,17.699 12.008,17.364 12.008,17.000 L12.008,7.000 C12.008,6.637 12.204,6.303 12.521,6.127 C12.838,5.950 13.227,5.958 13.534,6.149 L21.553,11.105 C21.846,11.286 22.026,11.606 22.027,11.951 C22.028,12.296 21.852,12.618 21.560,12.801 L13.541,17.846 ZM14.009,8.794 L14.009,15.189 L19.137,11.963 L14.009,8.794 Z"/>
+                     </svg>  
+                    <svg  class="size-7 hover:cursor-pointer hover:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"/>
+                    </svg> 
+                </div>      
+            </div>                  
+        </section>
+
+        <!-- JS -->
+       <script>
+        const menuIcon = document.querySelector('.menuIcon')
+        const menuBar = document.querySelector('.MenuBar')
+
+        function closeMenu(){
+            menuBar.classList.toggle('hidden');
+        }
+
+        menuIcon.addEventListener('click', ()=>closeMenu())
+
+        // selecting all the nav bar links
+        const commLnk = document.querySelector('.commLnk');
+        const storiesLnk = document.querySelector('.storiesLnk');
+        const coursesLnk = document.querySelector('.coursesLnk');
+        const footerLnk = document.querySelector('.footerLnk');
+
+        const commLnkM = document.querySelector('.commLnkM');
+        const storiesLnkM = document.querySelector('.storiesLnkM');
+        const coursesLnkM = document.querySelector('.coursesLnkM');
+        const footerLnkM = document.querySelector('.footerLnkM');
+
+        // selecting sections to scroll
+        const commSec = document.querySelector('.commSec');
+        const storiesSec = document.querySelector('.storiesSec');
+        const coursesSec = document.querySelector('.coursesSec');
+        const footerSec = document.querySelector('.footerSec');
+
+        // func to scroll
+        commLnk.addEventListener('click', () =>{
+            commSec.scrollIntoView({behavior:"smooth"})
+        })
+        storiesLnk.addEventListener('click', () =>{
+            storiesSec.scrollIntoView({behavior:"smooth"})
+        })
+        coursesLnk.addEventListener('click', () =>{
+            coursesSec.scrollIntoView({behavior:"smooth"})
+        })
+        footerLnk.addEventListener('click', () =>{
+            footerSec.scrollIntoView({behavior:"smooth"})
+        })
+
+        // functions to scroll in mobile
+        function scrolltoCommsec(){
+            commSec.scrollIntoView({behavior:"smooth"})
+        }
+        function scrolltoCoursesec(){
+            coursesSec.scrollIntoView({behavior:"smooth"})
+        }
+        function scrolltostoriesec(){
+            storiesSec.scrollIntoView({behavior:"smooth"})
+        }
+        function scrolltoFootersec(){
+            footerSec.scrollIntoView({behavior:"smooth"})
+        }
+        // scroll for Mobile
+        commLnkM.addEventListener('click',()=> {closeMenu();scrolltoCommsec()})
+        coursesLnkM.addEventListener('click', () =>{closeMenu();scrolltoCoursesec()})
+        storiesLnkM.addEventListener('click', () =>{closeMenu();scrolltostoriesec()})
+        footerLnkM.addEventListener('click', () =>{closeMenu();scrolltoFootersec()})
+       </script>
+</body>
+
+</html>
